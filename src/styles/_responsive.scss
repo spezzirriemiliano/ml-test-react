@@ -1,0 +1,29 @@
+$tabledWidth: 768px;
+$desktopWidth: 1152px;
+
+@mixin centered($width: $desktopWidth) {
+
+    max-width: $width;
+    margin: 0 auto;
+}
+
+@mixin respond-to($medias) {
+    $tablet: $tabledWidth;
+    $desktop: $desktopWidth;
+    @each $media in $medias {
+      @if $media == ph {
+        @media only screen and (max-width: ($tablet - 1)) {
+          @content;
+        }
+      } @else if $media == tb {
+        @media only screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+          @content;
+        }
+      } @else if $media == dt {
+        @media only screen and (min-width: $desktop) {
+          @content;
+        }
+      }
+    }
+  }
+  
