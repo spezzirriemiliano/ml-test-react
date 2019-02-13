@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import SearchService from '../../services/search.service';
+import BreadCrumb from './breadcrumb/Breadcrumb';
+import ResultItem from './result-item/ResultItem';
+import Paginator from './paginator/Paginator';
+import './Results.scss';
 
 class Results extends Component {
 
     state = {
-        products: []
+        products: [],
+        categories: []
     }
     
     componentDidMount() {
@@ -22,17 +27,18 @@ class Results extends Component {
 
     getItems(query) {
         SearchService.getItems(query).then(response => {
-            this.setState({products: response.data.items})
+            this.setState({products: response.data.items, categories: response.data.categories})
         });
     }
 
     render() {
         return (
-            <div>
-                <div>Results page</div>
+            <div className="results-container">
+                <BreadCrumb categories={this.state.categories}/>
                 {this.state.products.map(p => {
-                    return (<div key={p.id}>{p.title}</div>)
+                    return (<ResultItem key={p.id} item={p} />)
                 })}
+                <Paginator/>
             </div>
         );
     }

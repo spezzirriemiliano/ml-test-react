@@ -1,4 +1,10 @@
+@import 'styles/colors';
+
 * {
   box-sizing: border-box;
   font-family: "Proxima Nova";
+}
+
+.page-container {
+    background-color: $gray1;
 }
