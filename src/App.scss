@@ -1,8 +1,10 @@
+@import 'styles/ml_proxima_nova';
 @import 'styles/colors';
 
 * {
   box-sizing: border-box;
   font-family: "Proxima Nova";
+  line-height: 1em;
 }
 
 .page-container {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SearchService from '../../services/search.service';
-import BreadCrumb from './breadcrumb/Breadcrumb';
+import BreadCrumb from '../../components/breadcrumb/Breadcrumb';
 import ResultItem from './result-item/ResultItem';
 import Paginator from './paginator/Paginator';
 import './Results.scss';

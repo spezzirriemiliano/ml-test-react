@@ -1,0 +1,29 @@
+@import 'styles/variables';
+@import 'styles/components';
+
+.item-detail-container {
+    width: 300px;
+    float: right;
+    margin-left: $margin-doble;
+    
+    .item-status-sold {
+        font-size: 14px;
+        margin-bottom: $margin-simple; 
+    }
+
+    .item-title {
+        font-size: 24px;
+        margin-bottom: $margin-doble;
+    }
+
+    .item-price {
+        font-size:  46px;
+        margin-bottom: $margin-doble;
+        font-weight: 300;
+    }
+
+    .buy-button {
+        @include btn-primary;
+        width: 100%;
+    }
+}

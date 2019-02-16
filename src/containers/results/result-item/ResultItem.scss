@@ -35,10 +35,18 @@
             margin-left: $margin-simple;
         }
     
-        .item-title {
-            margin-top: $margin-doble;
-            font-size: 18px;
+        .item-link {
+            text-decoration: none;
+            color: $black2;
+            &:hover {
+                color: $black;
+            }
+            .item-title {
+                margin-top: $margin-doble;
+                font-size: 18px;
+            }
         }
+        
     }
 
     .item-address {
@@ -46,7 +54,7 @@
         font-size: 12px;
         padding-top: $margin-doble;
         width: 100px;
-        text-align: right;
+        text-align: left;
     }
     
 }

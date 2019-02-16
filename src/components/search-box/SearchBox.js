@@ -21,7 +21,7 @@ class SearchBox extends Component {
                 <div className="search-box-center">
                     <div className="ml-logo" />
                     <div className="ml-input-search-container">
-                        <input className="ml-input-search" type="text" onKeyPress={this.goToSearch.bind(this)}></input>
+                        <input className="ml-input-search" type="text" onKeyPress={this.goToSearch.bind(this)} placeholder="Nunca dejes de buscar"></input>
                     </div>
                 </div>
             </div>

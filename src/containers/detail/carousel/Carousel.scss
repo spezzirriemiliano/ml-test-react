@@ -1,0 +1,15 @@
+@import 'styles/responsive.scss';
+
+.carousel-container {
+    .carousel-image {
+        width: 680px;
+        
+        @include respond-to(tb) {
+            width: 480px
+        }
+
+        @include respond-to(ph) {
+            width: 280px
+        }
+    }
+}
