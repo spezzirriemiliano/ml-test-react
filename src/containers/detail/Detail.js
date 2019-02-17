@@ -38,13 +38,13 @@ class Detail extends Component {
         return (
             <div className="detail-container">
                 <BreadCrumb categories={this.state.categories}/>
-                <div class="item-header">
+                <div className="item-header">
                     <Carousel picture={this.state.item.picture} />
                     <div className="item-detail">
                         <ItemDetail item={this.state.item}/>
                     </div>
                 </div>
-                <div class="item-footer">
+                <div className="item-footer">
                     <ItemDescription description={this.state.item.description}/>
                 </div>
             </div>

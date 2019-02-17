@@ -13,7 +13,7 @@ const ItemDetail = (props) => {
             <div className="item-price">
                 <span>{props.item.price.currency} {props.item.price.amount}</span>
             </div>
-            <button class="buy-button" type="button">Comprar</button>
+            <button className="buy-button" type="button">Comprar</button>
         </div>
     );
 }
