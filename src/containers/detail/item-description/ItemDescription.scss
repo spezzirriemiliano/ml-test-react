@@ -1,8 +1,11 @@
+@import 'styles/variables.scss';
+
 .item-description-container {
     max-width: 680px;
     
     .item-description-header {
         font-size: 28px;
+        margin: $margin-doble 0;
     }
 
     .item-description-content {

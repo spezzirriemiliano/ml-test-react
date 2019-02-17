@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SearchService from '../../services/search.service';
+import ItemService from '../../services/item.service';
 import BreadCrumb from '../../components/breadcrumb/Breadcrumb';
 import ResultItem from './result-item/ResultItem';
 import Paginator from './paginator/Paginator';
@@ -26,7 +26,7 @@ class Results extends Component {
     }
 
     getItems(query) {
-        SearchService.getItems(query).then(response => {
+        ItemService.getItems(query).then(response => {
             this.setState({products: response.data.items, categories: response.data.categories})
         });
     }

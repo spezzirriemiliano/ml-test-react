@@ -17,7 +17,9 @@ const ResultItem = (props) => {
                 <Link className="item-link" to={'/items/' + props.item.id}>
                     <div className="item-title">{props.item.title}</div>
                 </Link>
-                <div className="item-status">{props.item.condition === 'new'? 'Nuevo' : 'Usado'}</div>
+                <div className="item-status">{
+                        props.item.condition === 'new'? 'Nuevo' : props.item.condition === 'used'? 'Usado' : ''
+                    }</div>
             </div>
             <div className="item-address">{props.item.address}</div>
         </div>
