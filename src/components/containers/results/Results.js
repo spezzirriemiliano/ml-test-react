@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ItemService from '../../services/item.service';
-import BreadCrumb from '../../components/breadcrumb/Breadcrumb';
+import ItemService from '../../../services/item.service';
+import BreadCrumb from '../../commons/breadcrumb/Breadcrumb';
 import ResultItem from './result-item/ResultItem';
 import Paginator from './paginator/Paginator';
 import './Results.scss';

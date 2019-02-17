@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import ItemService from '../../services/item.service';
-import BreadCrumb from '../../components/breadcrumb/Breadcrumb';
+import ItemService from '../../../services/item.service';
+import CategoryService from '../../../services/category.service';
+import BreadCrumb from '../../commons/breadcrumb/Breadcrumb';
 import Carousel from './carousel/Carousel';
 import ItemDetail from './item-detail/ItemDetail';
 import ItemDescription from './item-description/ItemDescription';
-import CategoryService from '../../services/category.service';
 import './Detail.scss'
 
 class Detail extends Component {
