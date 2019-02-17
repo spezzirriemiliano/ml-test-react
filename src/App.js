@@ -12,11 +12,6 @@ class App extends Component {
       <BrowserRouter>
         <div className="page-container">
           <SearchBox/>
-         {/* <div> Links...
-            <Link to={'/search'}>Search</Link>
-            <Link to={'/results'}>Result</Link>
-            <Link to={'/detail'}>Detail</Link>
-          </div>*/}
           <div>
             <Route path="/items" exact component={Results}></Route>
             <Route path="/items/:id" exact component={Detail}></Route>
