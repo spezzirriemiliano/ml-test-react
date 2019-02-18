@@ -13,6 +13,18 @@
         "used": "Used - "
     },
     "ItemDescription": {
-        "productDescription": "Product description"
+        "productDescription": "Product description",
+        "noItemDescription": "The seller did not include a description of the product"
+    },
+    "Paginator": {
+        "next": "Next",
+        "before": "Before"
+    },
+    "Results": {
+        "error": "Oops, an error has occurred. Soon we will be available again.",
+        "noProducts": "Oops, we could not find any product, try another search."
+    },
+    "Detail": {
+        "itemError": "The product is not available at the moment. Try again later."
     }
 }

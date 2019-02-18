@@ -10,9 +10,14 @@ const ItemDescription = (props) => {
             {props.t('productDescription')}
             </div>
             <div className="item-description-content">
-                    {props.description && props.description.split('\n').map((text, index) => {
-                    return (<span key={index}>{text}<br/></span>)
-                })}
+                    {
+                        props.description && props.description !== '' && props.description.split('\n').map((text, index) => {
+                            return (<span key={index}>{text}<br/></span>)
+                        })
+                    }
+                    {
+                        props.description === '' && <div>{props.t('noItemDescription')}</div>
+                    }
             </div>
         </div>
     );

@@ -1,5 +1,36 @@
+@import 'styles/colors';
+
 .paginator-container {
     margin-top: 50px;
     text-align: center;
     height: 60px;
+
+    .buttons-container {
+        .pg-button {
+            text-align: center;
+            display: inline-block;
+            line-height: 40px;
+            color: $black2;
+            cursor: pointer;
+            border-radius: 3px;
+            margin: 0 3px;
+            &:hover {
+                background-color: #DDDDDD;
+            }
+        }
+
+        .number-button {
+            width: 40px;
+            height: 40px;
+        }
+
+        .next-button {
+            padding: 0 18px;
+        }
+
+        .before-button {
+            padding: 0 18px;
+        }
+    }
+
 }

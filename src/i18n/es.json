@@ -13,6 +13,18 @@
         "used": "Usado - "
     },
     "ItemDescription": {
-        "productDescription": "Descripción del producto"
+        "productDescription": "Descripción del producto",
+        "noItemDescription": "El vendedor no incluyó una descripción del producto"
+    },
+    "Paginator": {
+        "next": "Siguiente",
+        "before": "Anterior"
+    },
+    "Results": {
+        "error": "Ups, se ha producido un error. En breve estaremos disponible nuevamente.",
+        "noProducts": "Ups, no hemos podido encontrar ningun producto. Prueba con otra busqueda."
+    },
+    "Detail": {
+        "itemError": "El producto no se encuentra disponible por el momento. Vuelva a intentar más tarde."
     }
 }

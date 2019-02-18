@@ -1,6 +1,7 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
 import './ItemDetail.scss';
+import UtilsService from '../../../../services/utils.service';
 
 
 const ItemDetail = (props) => {
@@ -12,7 +13,8 @@ const ItemDetail = (props) => {
             </div>
             <div className="item-title">{props.item.title}</div>
             <div className="item-price">
-                <span>{props.item.price.currency} {props.item.price.amount}</span>
+                <span>$ {UtilsService.formatPrice(props.item.price.amount)}</span>
+                <sup>{UtilsService.formatDecimals(props.item.price.decimals)}</sup>
             </div>
             <button className="buy-button" type="button">{props.t('buy')}</button>
         </div>

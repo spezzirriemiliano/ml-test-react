@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import UtilsService from '../../../../services/utils.service';
 import './ResultItem.scss';
 
 const ResultItem = (props) => {
@@ -10,7 +11,7 @@ const ResultItem = (props) => {
                 <img className="item-image" src={props.item.picture} alt={props.item.title}/>
             </Link>
             <div className="item-information">
-                <div className="item-price">{props.item.price.currency} {props.item.price.amount}</div>
+                <div className="item-price">$ {UtilsService.formatPrice(props.item.price.amount)}</div>
                 {props.item.free_shipping && (
                     <div className="item-free-shipping"></div>
                 )}
