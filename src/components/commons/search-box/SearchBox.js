@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
+import { withTranslation } from 'react-i18next';
 import './SearchBox.scss';
 
 
 class SearchBox extends Component {
 
+       
     searchText = '';
 
     saveSearchText(e) {
@@ -31,7 +33,7 @@ class SearchBox extends Component {
                 <div className="search-box-center">
                     <div className="ml-logo" />
                     <div className="ml-input-search-container">
-                        <input className="ml-input-search" type="text" onKeyPress={this.goToSearch.bind(this)} onChange={this.saveSearchText.bind(this)} placeholder="Nunca dejes de buscar" />
+                        <input className="ml-input-search" type="text" onKeyPress={this.goToSearch.bind(this)} onChange={this.saveSearchText.bind(this)} placeholder={this.props.t('neverStopSearching')} />
                         <div className="search-icon" onClick={this.clickToSearch.bind(this)}/>
                     </div>
                 </div>
@@ -40,4 +42,4 @@ class SearchBox extends Component {
     }
 }
 
-export default withRouter(SearchBox);
+export default withRouter(withTranslation('SearchBox')(SearchBox));

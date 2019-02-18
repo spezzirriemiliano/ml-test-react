@@ -1,5 +1,6 @@
 @import 'styles/fonts/ml_proxima_nova';
 @import 'styles/colors';
+@import 'styles/responsive';
 
 * {
   box-sizing: border-box;
@@ -9,4 +10,11 @@
 
 .page-container {
     background-color: $gray1;
+}
+
+.home-fake-img-container {
+    @include centered();
+    img {
+        width: 100%;
+    }
 }

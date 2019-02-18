@@ -1,0 +1,18 @@
+{
+    "SearchBox": {
+        "neverStopSearching": "Nunca dejes de buscar"
+    },
+    "ResultItem": {
+        "new": "Nuevo",
+        "used": "Usado"
+    },
+    "ItemDetail": {
+        "sold": "vendidos",
+        "buy": "Comprar",
+        "new": "Nuevo - ",
+        "used": "Usado - "
+    },
+    "ItemDescription": {
+        "productDescription": "Descripción del producto"
+    }
+}

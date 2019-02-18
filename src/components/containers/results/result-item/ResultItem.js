@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 import './ResultItem.scss';
 
 const ResultItem = (props) => {
@@ -18,12 +18,13 @@ const ResultItem = (props) => {
                     <div className="item-title">{props.item.title}</div>
                 </Link>
                 <div className="item-status">{
-                        props.item.condition === 'new'? 'Nuevo' : props.item.condition === 'used'? 'Usado' : ''
-                    }</div>
+                    props.t(props.item.condition, '')
+                }</div>
             </div>
             <div className="item-address">{props.item.address}</div>
         </div>
     );
 }
 
-export default ResultItem;
+export const ResultItemPure = ResultItem;
+export default withTranslation('ResultItem')(ResultItem);
